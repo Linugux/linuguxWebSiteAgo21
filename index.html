@@ -22,19 +22,28 @@
     <!-- End Google Tag Manager (noscript) -->
     <script>
         $(document).ready(function(){
+          $("#code").click(function(){
+            $(".about").hide(1618);
+            $(".home").hide(1618);
+            $(".contact").hide(1618);
+            $(".code").show(1618);
+          });
           $("#contact").click(function(){
             $(".about").hide(1618);
             $(".home").hide(1618);
             $(".contact").show(1618);
+            $(".code").hide(1618);
           });
           $("#about").click(function(){
             $(".about").show(1618);
             $(".home").hide(1618);
+            $(".code").hide(1618);
           });
           $("#home").click(function(){
             $(".home").show(1618);
             $(".about").hide(1618);
             $(".contact").hide(1618);
+            $(".code").hide(1618);
           });
         });
     </script>
@@ -46,6 +55,7 @@
             <a href="#" id="title" style="font-size: 22px">Linugux</a>
             <ul class="navigation">
                 <li><button id="home" style="background-color: black"><a>Home</a></button></li>
+                <li><button id="code" style="background-color: black"><a>Code</a></button></li>
                 <li><button id="about" style="background-color: black"><a>About</a></button></li>
                 <li><button id="contact" style="background-color: black"><a>Contact</a></button></li>
                 <!--
@@ -83,7 +93,10 @@
         <div class="fullitem">
             <p align="">
             <b>About Me</b>
-                I´m Engineer Computer Sciences on "Linux/Gnu".
+            <tt>
+                I´m Engineer Computer Sciences on "Linux/Gnu".<br>
+                My Name is Nestor Garrido 
+            </tt>
             </p>
             <p style="background-color: black" class="navigation" align="center">
                 <a>Creation and Design<br>for<br>Linugux</a><br>
@@ -108,6 +121,19 @@
                     <a>CopyLeft@Linugux.Inx ||| 2022</a><br>
                     <a href="mailto:linugux@gmail.com">Linugux@gmail.com</a>.<br>
                     <a href="https://wa.me/525624600477">+52 56 2460 0477</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="content" style="display: none;" class="code">
+        <div class="fullitem" style="background-color: black" align="center">
+            <div class="navigation">
+                <p>
+                    <a href="https://github.com/linugux/linuguxWebSiteAgo21">Github Repository Code source this site web Version 1.0 ...</a><br>
+                </p>
+                <hr>
+                <p>
+                    <a>Hello Mundo ... !!!</a>
                 </p>
             </div>
         </div>

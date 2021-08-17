@@ -1,6 +1,6 @@
 body {
     line-height: 150%;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(0, 0, 0, .8);
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -115,12 +115,12 @@ h5 {
 .navigation li {
     display: inline-block!important;
     list-style-image: none;
-    padding: 5px 5px 0px 0;
+    padding: 5px 5px 5px 0;
 }
 
 .navigation a {
     text-decoration: none;
-    font-size: 18px!important;
+    font-size: 16px!important;
     color: #C6E4F3;
     text-decoration: none;
     cursor: pointer;
