@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=460" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#3e98ba">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W3WJMK9');</script>
     <!-- End Google Tag Manager -->
@@ -19,18 +20,37 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3WJMK9" height="0" width="0" style="display:none;visibility hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    <script>
+        $(document).ready(function(){
+          $("#contact").click(function(){
+            $(".about").hide(1618);
+            $(".home").hide(1618);
+            $(".contact").show(1618);
+          });
+          $("#about").click(function(){
+            $(".about").show(1618);
+            $(".home").hide(1618);
+          });
+          $("#home").click(function(){
+            $(".home").show(1618);
+            $(".about").hide(1618);
+            $(".contact").hide(1618);
+          });
+        });
+    </script>
 </head>
-
 <body>
     <section id="header">
         <div id="headerCenter">
             <img id="avatar" src="linugux.jpg"/></a>
             <a href="#" id="title" style="font-size: 22px">Linugux</a>
             <ul class="navigation">
+                <li><button id="home" style="background-color: black"><a>Home</a></button></li>
+                <li><button id="about" style="background-color: black"><a>About</a></button></li>
+                <li><button id="contact" style="background-color: black"><a>Contact</a></button></li>
+                <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <!--
                 <li><a href="writings.html">Writings</a></li>-->
             </ul>
             <div class="social">
@@ -42,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section id="content">
+    <section id="content" class="home">
         <div class="fullitem">
             <p align="justify">
                 <a href="https://linux.org">Linux</a> engineer computer sciences on building projects that make people to share. My site web of <a href="https://www.google.com/search?client=ubuntu&channel=fs&q=linugux&ie=utf-8&oe=utf-8">http://linugux.ddns.net</a> have been highly ranked in the Google, and I have been greatyfull to see some of HomeServer on <a href="https://raspberrypi.org">Raspberry Pi</a> processor <a href="https://www.arm.com/">ARM</a> with System Operative <a href="https://www.raspbian.org/">Rasbian 8 Jessy</a> use General Public License <a href="https://www.gnu.org/licenses/gpl-3.0.html">(GNU)</a> in international advertising campaigns, magazines, and websites around the world.
@@ -58,6 +78,29 @@
                 </p>
             </div>
         </div>
+    </section>
+    <section id="content" style="display: none;" class="about">
+        <div class="fullitem">
+            <p align="">
+            <b>About Me</b>
+                I´m Engineer Computer Sciences on "Linux/Gnu".
+            </p>
+            <p style="background-color: black" class="navigation" align="center">
+                <a>Creation and Design<br>for<br>Linugux</a><br>
+                <a>http://Linugux.ddns.net</a>
+            </p>
+        </div>
+        <div class="fullitem" align="center">
+            <div class="caption">
+                <p>
+                    <a href="linugux.jpg"><img src="linugux.jpg"></a>
+                    <a href="Linugux.gif"><img src="Linugux.gif"></a>
+                    <a href="linuguxLogoWhatsapp.jpg"><img src="linuguxLogoWhatsapp.jpg"></a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="content" style="display: none;" class="contact">
         <div class="fullitem" style="background-color: black" align="center">
             <div class="navigation">
                 <p>
