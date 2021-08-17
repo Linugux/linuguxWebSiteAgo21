@@ -164,7 +164,7 @@ hr {
 .fullitem {
     max-width: 1260px;
     min-width: 400px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .fullitem #notice {
@@ -172,7 +172,7 @@ hr {
 }
 
 .fullitem #info {
-    padding: 20px;
+    padding: 10px;
 }
 
 .fullitem p {
@@ -180,7 +180,7 @@ hr {
 }
 
 .fullitem a {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .fullitem img {
@@ -246,7 +246,7 @@ hr {
 }
 
 .item .caption {
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .item img {
