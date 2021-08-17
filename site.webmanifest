@@ -1,0 +1,15 @@
+{
+    "name": "Linugux",
+    "short_name": "Linugux",
+    "icons": [
+        {
+            "src": "linugux.jpg",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#3e98ba",
+    "background_color": "#3e98ba",
+    "start_url": "http://linugux.ddns.net",
+    "display": "standalone"
+}
