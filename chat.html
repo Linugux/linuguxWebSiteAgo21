@@ -1,0 +1,84 @@
+
+
+<script language="JavaScript"> <!--
+var shout_popup = 0;
+
+function newWindow(url, w, h, x, y, scroll, menu, tool, resizable) {
+  if(shout_popup && !shout_popup.closed) shout_popup.close();
+  if(!x && !y) {
+    x = Math.round((screen.width - w) / 2);
+    y = Math.round((screen.height - h) / 2);
+  }
+  shout_popup = window.open(url, "shout_popup", "width=" + w + ",height=" + h +
+                            ",left=" + x + ",top=" + y + ",scrollbars=" + scroll +
+                            ",menubar=" + menu + ",toolbar=" + tool + ",resizable=" + resizable);
+  shout_popup.focus();
+}
+
+function refreshBox() {
+  document.fShout.Text.value = '';
+  document.fShout.submit();
+  setTimeout("document.fShout.Refresh.disabled=false", 1000);
+   clearInterval(dsadsadsa);
+}
+
+function shoutIt() {
+  document.fShout.submit();
+  document.fShout.Text.value='';
+  setTimeout("document.fShout.Text.value=''", 1000);
+  setTimeout("document.fShout.Shout.disabled=false;", 1000);
+   clearInterval(dsadsadsa);
+
+}
+//--> </script>
+<meta http-equiv='Content-Type' content="text/html; charset=utf8">
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="black" >
+<SCRIPT>
+dsadsadsa=setInterval('doBlink()',120000);
+function doBlink() {
+   try{window.frames[0].location.reload(true);}catch (exception1){}
+   try{window.frames[1].location.reload(true);}catch (exception1){}
+
+                   }
+</SCRIPT>
+
+<link rel="stylesheet" href="http://www.listen2myradio.com/shoutbox.css" type="text/css">
+<font color="white">
+<table border=0 cellspacing=0 cellpadding=0 align=center><tr>
+<td colspan=2 align=center>
+
+<div class=scroll><iframe name="ShoutBox" src="http://109.169.14.34/chat/frame2.php?a=1431138" class="cssShoutBox" 
+width=209 height=490 frameborder=0></iframe></div>
+</td>
+</tr>
+<form name="fShout" action="http://109.169.14.34/chat/chat/shout.php?a=1431138" target="ShoutBox" 
+method=post>
+<tr>
+<td class="cssShoutText"><font color="white">Name:</font></td>
+<td align=right><input type=text name="Name" size=21 maxlength=20 class="cssShoutForm" value=""></td>
+</tr><tr>
+<td class="cssShoutText"><font color="white">eMail:</font></td>
+<td align=right><input type=text name="EMail" size=21 maxlength=75 class="cssShoutForm" value=""></td>
+</tr><tr>
+<td colspan=2 align=center>
+  <table border=0 cellspacing=0 cellpadding=0 width=100%><tr>
+  <td class="cssShoutText"><font color="white">Message:</font></td>
+  <td align=right><input type=button value="Smilies" class="cssShoutButton" onClick="newWindow('smilies.php', 130, 300, 0, 0, 1)"></td>
+  </tr></table>
+  <textarea name="Text" cols=22 rows=3 style="width:100%" wrap=virtual class="cssShoutForm"></textarea>
+  <table border=0 cellspacing=0 cellpadding=0 width=100%><tr>
+  <td><input type=button name="Refresh" value="Refresh" class="cssShoutButton" 
+onClick="this.disabled=false; 
+
+refreshBox();
+"></td>
+  <td align=right><input type=button name="Shout" value="Shout!" class="cssShoutButton" 
+onClick="this.disabled=true; shoutIt()"></td>
+  </tr></table>
+</td>
+</tr>
+</form>
+</table>
+</body>
+
+
