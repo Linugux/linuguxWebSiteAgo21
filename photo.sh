@@ -1,4 +1,5 @@
 #! /bin/sh
 
 fswebcam -d /dev/video0 pepe.jpg
-mv pepe.jpg /var/www/html
+cp pepe.jpg /var/www/html
+# scp pepe.jpg linugux@192.168.1.66:/home/linugux/Desktop
