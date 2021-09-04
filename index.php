@@ -8,6 +8,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
     <meta name="description" content="Creation and Design For Linugux" />
     <meta name="viewport" content="width=460" />
     <meta charset="utf-8" />
@@ -58,8 +59,6 @@
                 <li><button id="code" style="background-color: black"><a>Code</a></button></li>
                 <li><button id="about" style="background-color: black"><a>About</a></button></li>
                 <li><button id="contact" style="background-color: black"><a>Contact</a></button></li>
-		<hr>
-		Estoy con Vladimir aqui ...
                 <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -74,30 +73,41 @@
             </div>
         </div>
     </section>
+		<p><?php  include 'indexphp.php'?></p>
     <section id="content" class="home">
         <div class="fullitem">
             <p align="justify">
+		<?php echo date('l, F jS, Y, h:m:s.');?>
                 <a href="https://linux.org">Linux</a> engineer computer sciences on building projects that make people to share. My site web of <a href="https://www.google.com/search?client=ubuntu&channel=fs&q=linugux&ie=utf-8&oe=utf-8">http://linugux.ddns.net</a> have been highly ranked in the Google, and I have been greatyfull to see some of HomeServer on <a href="https://raspberrypi.org">Raspberry Pi</a> processor <a href="https://www.arm.com/">ARM</a> with System Operative <a href="https://www.raspbian.org/">Raspbian 8 Jessie</a> use General Public License <a href="https://www.gnu.org/licenses/gpl-3.0.html">(GNU)</a> in international advertising campaigns, magazines, and websites around the world.
             </p>
         </div>
         <div class="fullitem" align="center">
+		<?php
+		print uname;
+		?>
+            <hr>
             <b>Youtube Channel</b><br>
             <a href="https://youtube.com/user/linugux/videos" target="_blank"><img src="linuguxLogoGoogle.jpg"/></a>
             <div class="caption">
                 <a class="title" href="https://youtube.com/user/linugux/videos" target="_blank">Creation And Design For Linugux</a>
                 <p>
-                    Differentiate between build variants lenguages of programmation
-                </p>
+		    Differentiate between build variants lenguages of programmation.
+		</p>
             </div>
             <div class="fullitem" align="center">
-            <p>
-                <a>WebCam Raspberry Pi<br>processing captured image each 10 minutes [ $ <. ]</a><br>
-                <a href="pepe.jpg"><img width="30%" src="pepe.jpg"></a>
-            </p>
-        </div>
-            <div>
+                <script src="/asciinema-player.js"></script>
+                <asciinema-player src="433901.json" cols="80" rows="24"></asciinema-player>
+                <hr>
+		<asciinema-player src="433909.json" cols="80" rows="24"></asciinema-player>
+		<hr>
                 <script type="text/javascript" src="//rc.revolvermaps.com/0/0/6.js?i=2h93hvpxcgq&amp;m=17&amp;s=230&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=10&amp;bv=100&amp;lx=-400&amp;ly=400&amp;hi=70&amp;he=27&amp;hc=a8ddff&amp;rs=80" async="async"></script>
-            </div>
+		<hr>
+		<p>
+			<a>WebCam Raspberry Pi processing captured image each 10 minutes [ $ <. ]</a>
+		<br>
+		<a href="pepe.jpg"><img width="50%" src="pepe.jpg"></a><hr>
+		</p>
+		</div>
         </div>
     </section>
     <section id="content" style="display: none;" class="about">
