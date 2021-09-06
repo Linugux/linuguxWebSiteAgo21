@@ -32,8 +32,8 @@
 }
 .asciinema-player-wrapper:fullscreen {
   background-color: #000;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -53,8 +53,8 @@
 }
 .asciinema-player-wrapper:-webkit-full-screen {
   background-color: #000;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -74,8 +74,8 @@
 }
 .asciinema-player-wrapper:-moz-full-screen {
   background-color: #000;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -95,8 +95,8 @@
 }
 .asciinema-player-wrapper:-ms-fullscreen {
   background-color: #000;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

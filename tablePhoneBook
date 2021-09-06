@@ -1,0 +1,9 @@
+CREATE TABLE `phonebook` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phone` varchar(32) DEFAULT NULL,
+  `firstname` varchar(32) DEFAULT NULL,
+  `lastname` varchar(32) DEFAULT NULL,
+  `address` varchar(64) DEFAULT NULL,
+  `email` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 

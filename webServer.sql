@@ -16,6 +16,20 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `msgUpdate`
+--
+
+DROP TABLE IF EXISTS `msgUpdate`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `msgUpdate` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg65` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `phonebook`
 --
 
@@ -23,12 +37,28 @@ DROP TABLE IF EXISTS `phonebook`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `phonebook` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(32) DEFAULT NULL,
   `firstname` varchar(32) DEFAULT NULL,
   `lastname` varchar(32) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL,
-  `email` varchar(32) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `email` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `titleUpdate`
+--
+
+DROP TABLE IF EXISTS `titleUpdate`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `titleUpdate` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(66) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -40,4 +70,4 @@ CREATE TABLE `phonebook` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-04  7:44:24
+-- Dump completed on 2021-09-06 13:33:33

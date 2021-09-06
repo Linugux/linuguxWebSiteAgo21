@@ -50,11 +50,39 @@
     </script>
 </head>
 <body>
-    <section id="header">
+    <section id="header" >
+                <div class="typewriter">
+                    <h1 id="reloadmsg" style="text-transform: capitalize; font-size: 9px; color : white;position:absolute;" ></h1>
+                </div>
+                <div class="home">
+                    <div class='at-container'><br>                
+                        <img width="10%" src="linugux.jpg" style="top: 10px; position: absolute;" align="right" />
+                        <div class="typewriter" style="position: relative;" align="center">
+                            <h1 id="reloadtitle" style="top: 20px; font-size: 30px; text-transform: capitalize;">$ ></h1>
+                        </div>
+                        <div style="position: relative;" id="reloadphp"  class="navigation" align="right"></div>
+                        <br><br>
+                        <br><hr>
+                        <div>
+                            <p style="color: white ;" align="justify" >
+                                <tt id="reloadmsgblue" >
+                                   <?php include 'fortuneCowsay.php'; ?>
+                                </tt>
+                                <pre id="reloadcowsay" style="color: white">
+                                    <?php include 'cowsay.php'; ?>
+                                </pre>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="home" align="right">
+                <a class="linugux" id="title" style="font-size: 22px">Creation and Design</a>
+            <br>
+        </div>
+    </section>
+    <section>
         <div id="headerCenter">
-            <img id="avatar" src="linugux.jpg"/></a>
-            <a href="#" id="title" style="font-size: 22px">Linugux</a>
-            <ul class="navigation">
+            <ul class="navigation" style="position: relative; background-color: black">
                 <li><button id="home" style="background-color: black"><a>Home</a></button></li>
                 <li><button id="code" style="background-color: black"><a>Code</a></button></li>
                 <li><button id="about" style="background-color: black"><a>About</a></button></li>
@@ -71,20 +99,143 @@
                     </svg>
                 </a>
             </div>
+            </div>
         </div>
     </section>
-		<p><?php  include 'indexphp.php'?></p>
-    <section id="content" class="home">
+    <script>
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadphp').load('indexphp.php');//actualizas el div
+   }, 1000 );
+});
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadtitle').load('reloadtitle.php');//actualizas el div
+   }, 5000 );
+});
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadmsg').load('reloadmsg.php');//actualizas el div
+   }, 1618 );
+});
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadmsgblue').load('fortuneCowsay.php');//actualizas el div
+   }, 1000 );
+});
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadcowsay').load('cowsay.php');//actualizas el div
+   }, 1000 );
+});
+</script>
+<style> 
+    div.at-container {
+  display: ;
+  align-items: ;
+  justify-content: ;
+  height: 92%;
+}
+.at-item {
+    top: 220px;
+  width: 90px;
+  height: 70px;
+  background-color:#ffe672;
+  animation-name: flip-horizontal;
+  animation-duration: 2.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes flip-horizontal {
+  0%{
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100%{
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+div 
+.linugux {
+    top: -40PX;
+  width: 120px;
+  height: 10px;
+  background: ;
+  position: relative;
+  animation: mymove 17s infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 300px;}
+}
+
+.typewriter h1 {
+    color: #C6E4F3;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .2em; /* Adjust as needed */
+  animation: 
+    typing 13s steps(50, end),
+    blink-caret .1618s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+</style>
+    <hr>
+<section id="content" class="code" style="display: none">
+    <div class="navigation" align="justify">
+        <div class="typewriter">    
+            <p>HomeServer = Raspberry Pi +b + SD 2GB + 5v.<hr>  
+                <?php $a=shell_exec('uname -a');echo "<a style='background-color:black;'>$a</a><br>";?>
+                <hr>
+                The MariaDB command-line tool
+                <?php $b=shell_exec('mariadb -V');echo "<a style='background-color:black;'>$b</a>";?>
+                <hr>
+                PHP Command Line Interface 'CLI'
+                <?php $b=shell_exec('php7.0 -v');echo "<a style='background-color:black;'>$b</a>";?>
+                <hr>
+                Hypertext Transfer Protocol Server
+                <?php $b=shell_exec('apache2 -v');echo "<a style='background-color:black;'>$b</a>";?>
+                <hr>
+                <div align="center" style="background-color: black">
+                    <ul>
+                        <li><a href="files">Files</a></li>
+                        <li><a href="fileBashRPi2021">Files2</a></li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="content" class="about" style="display: none">
         <div class="fullitem">
+		      <?php echo date('l, F jS, Y, h:m:s.');?><hr>
             <p align="justify">
-		<?php echo date('l, F jS, Y, h:m:s.');?>
                 <a href="https://linux.org">Linux</a> engineer computer sciences on building projects that make people to share. My site web of <a href="https://www.google.com/search?client=ubuntu&channel=fs&q=linugux&ie=utf-8&oe=utf-8">http://linugux.ddns.net</a> have been highly ranked in the Google, and I have been greatyfull to see some of HomeServer on <a href="https://raspberrypi.org">Raspberry Pi</a> processor <a href="https://www.arm.com/">ARM</a> with System Operative <a href="https://www.raspbian.org/">Raspbian 8 Jessie</a> use General Public License <a href="https://www.gnu.org/licenses/gpl-3.0.html">(GNU)</a> in international advertising campaigns, magazines, and websites around the world.
             </p>
         </div>
         <div class="fullitem" align="center">
-		<?php
-		print uname;
-		?>
             <hr>
             <b>Youtube Channel</b><br>
             <a href="https://youtube.com/user/linugux/videos" target="_blank"><img src="linuguxLogoGoogle.jpg"/></a>
@@ -108,7 +259,7 @@
 		<a href="pepe.jpg"><img width="50%" src="pepe.jpg"></a><hr>
 		</p>
 		</div>
-        </div>
+    </div>
     </section>
     <section id="content" style="display: none;" class="about">
         <div class="fullitem">

@@ -1,50 +1,48 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-</head>
-<body>
-
 <?php
-$a=shell_exec('uname -a') ;
-echo "<p>$a</p>";
-echo "Connects Server Mariadb; Table : Phonebook ;<br>";
-
-$hostname = "localhost";
-$username = "pi";
-$password = "my";
-$db = "webServer";
-
-$dbconnect=mysqli_connect($hostname,$username,$password,$db);
-echo "Databases : ";
-print $db;
-if ($dbconnect->connect_error) {
-	  die("Database connection failed: " . $dbconnect->connect_error);
-	  }
+  $variable=date("Y-m-d H:i:s");
+  echo '<a style="background-color: font-size:15px">'.$variable.'</a>';
 ?>
-<table  align="" style="font-size:13px; width: 100%; ">
-<tr align='center'>
-  <td>FirstName</td>
-  <td>LastName</td>
-  <td>Phone</td>
-  <td>Email</td>
-</tr>
-<?php
-$query = mysqli_query($dbconnect, "SELECT * FROM phonebook")
-   or die (mysqli_error($dbconnect));
 
-while ($row = mysqli_fetch_array($query)) {
-  echo
-   "<tr>
-    <td>{$row['firstname']}</td>
-    <td>{$row['lastname']}</td>
-    <td>{$row['phone']}</td>
-    <td>{$row['email']}</td>
-   </tr>";
+<P>
+<a style="font-size: 10px;">Connects Php7 to Mariadb-Server; Db : webServer ;<br> Table : Phonebook ;</a>
+</P>
 
-}
+<?php include 'conection.php'?>
+<div>
+  <table align="right" border="3" style="color: white ; background-color: ; font-size:14px;" >
+  <tr style="width: 100%">
+    <td>Id</td>
+    <td>Name</td>
+    <td>Phone</td>
+    <td>Email Code</td>
+  </tr>
+  <?php
+  #$query = mysqli_query($dbconnect, "SELECT * FROM phonebook ORDER BY id DESC")
+  $query = mysqli_query($dbconnect, "SELECT * FROM phonebook ORDER BY RAND()
+LIMIT 1")
+     or die (mysqli_error($dbconnect));
 
-?>
-</table>
-</body>
-</html>
+  while ($row = mysqli_fetch_array($query)) {
+    $namex = $row['firstname'];
+    $namex = substr($namex, 0, 2);
 
+    $phoneHide = $row['phone'];
+    $phoneHide = substr($phoneHide, 0, 10);
+
+    $show = $row['email'];
+    $show0 = substr($show, 0 , 3);
+    $show1 = substr($show, -10);
+    echo
+     "<tr>
+      <td>{$row['id']}</td>
+      <td>$namex{$row['lastname']}</td>
+      <td>$phoneHide *****</td>
+      <td>$show0*****$show1</td>
+     </tr>";
+  }
+  mysqli_close($dbconnect);
+  ?>
+  </table>
+</div>
+
+  
