@@ -6,7 +6,7 @@
 <P>
 <a style="font-size: 10px;">Connects Php7 to Mariadb-Server; Db : webServer ;<br> Table : Phonebook ;</a>
 </P>
-
+<!--
 <?php include 'conection.php'?>
 <div>
   <table align="right" border="3" style="color: white ; background-color: ; font-size:14px;" >
@@ -17,10 +17,31 @@
     <td>Email Code</td>
   </tr>
   <?php
-  #$query = mysqli_query($dbconnect, "SELECT * FROM phonebook ORDER BY id DESC")
+  $query1 = mysqli_query($dbconnect, "SELECT * FROM phonebook ORDER BY id DESC LIMIT 1")
+  or die (mysql_error($dbconnect));
+
   $query = mysqli_query($dbconnect, "SELECT * FROM phonebook ORDER BY RAND()
 LIMIT 1")
      or die (mysqli_error($dbconnect));
+
+  while($row1 = mysqli_fetch_array($query1)){
+    $namex1 = $row1['firstname'];
+    $namex1 = substr($namex1, 0, 2);
+
+    $phoneHide1 = $row1['phone'];
+    $phoneHide1 = substr($phoneHide1, 0, 10);
+
+    $show1 = $row1['email'];
+    $show01 = substr($show1, 0 , 3);
+    $show11 = substr($show1, -10);
+    echo
+     "<tr>
+      <td>{$row1['id']}</td>
+      <td>$namex1{$row1['lastname']}</td>
+      <td>$phoneHide1 *****</td>
+      <td>$show01*****$show11</td>
+     </tr>";
+  }
 
   while ($row = mysqli_fetch_array($query)) {
     $namex = $row['firstname'];
@@ -45,4 +66,4 @@ LIMIT 1")
   </table>
 </div>
 
-  
+ 

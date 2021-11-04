@@ -1,1 +1,2 @@
-The only thing worse than X Windows: (X Windows) - X
+Every cloud engenders not a storm.
+		-- William Shakespeare, "Henry VI"

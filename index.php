@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>
-        Linugux
+        http://Linugux.ddns.net
     </title>
     <link rel="canonical" href="https://linugux.ddns.net" />
     <link rel="icon" type="image/png" href="linugux.jpg">
@@ -14,6 +14,7 @@
     <meta charset="utf-8" />
     <meta name="theme-color" content="#3e98ba">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W3WJMK9');</script>
     <!-- End Google Tag Manager -->
@@ -47,10 +48,75 @@
             $(".code").hide(1618);
           });
         });
+
+    
+    Push.Permission.request();
+
+    Push.create('Hi there!', {
+    body: 'Welcome http://linugux.ddns.net',
+    icon: 'linugux.jpg',
+    timeout: 8000,               // Timeout before notification closes automatically.
+    vibrate: [100, 100, 100],    // An array of vibration pulses for mobile devices.
+    onClick: function() {
+        // Callback for when the notification is clicked. 
+        window.focus();
+        console.log(this);
+   }
+    });
+    
     </script>
+    <script type="text/javascript">
+         function notifyMe() {
+            //Vamos a comprobar si el navegador es compatible con las notificaciones
+            if (!("Notification" in window)) {
+                alert("This browser does not support desktop notification");
+            }
+            // Vamos a ver si ya se han concedido permisos de notificación
+            else if (Notification.permission === "granted") {
+                // Si está bien vamos a crear una notificación
+                var body =  document.getElementById("reloadcowsay");
+                var icon = "linugux.jpg";
+                var title = "Notificación";
+                var options = {
+                    body: body,
+                    icon: icon,
+                    lang: "ES",
+                    renotify: "true",
+                    vibrate: [100, 100, 100],
+                }
+                var notification = new Notification(title,options);
+                var audio = new Audio('notificacion.mp3');
+                audio.play();
+                notification.onclick = function () {
+                    //action
+                    audio.play();
+                };
+                setTimeout(notification.close.bind(notification), 10000);
+
+                Push.create('Push' ,{ 
+                    body: document.getElementById("reloadcowsay"),
+                    icon: 'Linugux.gif',
+                    timeout: 10000,
+                    vibrate: [100, 100, 100]});
+                    //action
+                setTimeout(function() {audio.play();}, 10000);
+            }
+            // De lo contrario, tenemos que pedir permiso al usuario
+            else if (Notification.permission !== 'denied') {
+                Notification.requestPermission(function (permission) {
+                    // Si el usuario acepta, vamos a crear una notificación
+                    if (permission === "granted") {
+                        var notification = new Notification("Gracias, Ahora podras recibir notifiaciones de nuestra página");
+                    }
+                });
+            }
+            // Por fin, si el usuario ha denegado notificaciones, y usted
+            // Quiere ser respetuoso no hay necesidad de preocuparse más sobre ellos.
+        }
+        </script>
 </head>
-<body>
-    <section id="header" >
+<body style="background-color: black; color: white;">
+    <section id="header">
                 <div class="typewriter">
                     <h1 id="reloadmsg" style="text-transform: capitalize; font-size: 9px; color : white;position:absolute;" ></h1>
                 </div>
@@ -58,49 +124,56 @@
                     <div class='at-container'><br>                
                         <img width="10%" src="linugux.jpg" style="top: 10px; position: absolute;" align="right" />
                         <div class="typewriter" style="position: relative;" align="center">
-                            <h1 id="reloadtitle" style="top: 20px; font-size: 30px; text-transform: capitalize;">$ ></h1>
+                        <h1 id="reloadtitle" style="top: 20px; font-size: 30px;"><a>Linugux.ddns.net</a></h1>
                         </div>
                         <div style="position: relative;" id="reloadphp"  class="navigation" align="right"></div>
                         <br><br>
                         <br><hr>
                         <div>
                             <p style="color: white ;" align="justify" >
-                                <tt id="reloadmsgblue" >
+                              <!--  <tt id="reloadmsgblue" >
                                    <?php include 'fortuneCowsay.php'; ?>
+                                </tt>-->
+                                <tt>
+                                    <pre id="reloadcowsay" style="font-size: 16px; color: white; background-color: black;">
+                                   <?php include 'cowsay.php'; ?>
+                                    </pre>
                                 </tt>
-                                <pre id="reloadcowsay" style="color: white">
-                                    <?php include 'cowsay.php'; ?>
-                                </pre>
                             </p>
                         </div>
                     </div>
             </div>
-            <div class="home" align="right">
-                <a class="linugux" id="title" style="font-size: 22px">Creation and Design</a>
-            <br>
+        <script>
+        function getResolution() {
+            alert("Your screen is: " + screen.width + "x" + screen.height);
+        }
+        </script>
+        <br>
+        <div class="home" align="left">
+            <a class="linugux" id="title" style="font-size: 22px">Creation and <br>Design</a>
         </div>
-    </section>
-    <section>
-        <div id="headerCenter">
+        <div id="">
             <ul class="navigation" style="position: relative; background-color: black">
                 <li><button id="home" style="background-color: black"><a>Home</a></button></li>
                 <li><button id="code" style="background-color: black"><a>Code</a></button></li>
                 <li><button id="about" style="background-color: black"><a>About</a></button></li>
                 <li><button id="contact" style="background-color: black"><a>Contact</a></button></li>
+                <!--<li><button style="background-color: black" onclick="notifyMe()"><a>NotifY</a></button></li>
+                <li><button style="background-color: black" onclick="getResolution();"><a>Resolution</a></button></li>-->
+
                 <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="writings.html">Writings</a></li>-->
+                <div class="social">
+                    <a href="http://twitter.com/linugux" target="_blank" title="twitter">
+                        <svg class="icons" width="21" height="21" viewBox="0 0 21 21">
+                            <path d="M18.502 4.435a6.892 6.892 0 0 1-2.18.872 3.45 3.45 0 0 0-2.552-1.12 3.488 3.488 0 0 0-3.488 3.486c0 .276.03.543.063.81a9.912 9.912 0 0 1-7.162-3.674c-.3.53-.47 1.13-.498 1.74.027 1.23.642 2.3 1.557 2.92a3.357 3.357 0 0 1-1.555-.44.15.15 0 0 0 0 .06c-.004 1.67 1.2 3.08 2.8 3.42-.3.06-.606.1-.934.12-.216-.02-.435-.04-.623-.06.42 1.37 1.707 2.37 3.24 2.43a7.335 7.335 0 0 1-4.36 1.49L2 16.44A9.96 9.96 0 0 0 7.355 18c6.407 0 9.915-5.32 9.9-9.9.015-.18.01-.33 0-.5A6.546 6.546 0 0 0 19 5.79a6.185 6.185 0 0 1-1.992.56 3.325 3.325 0 0 0 1.494-1.93"></path>
+                        </svg>
+                    </a>
+                </div>
             </ul>
-            <div class="social">
-                <a href="http://twitter.com/linugux" target="_blank" title="twitter">
-                    <svg class="icons" width="21" height="21" viewBox="0 0 21 21">
-                        <path d="M18.502 4.435a6.892 6.892 0 0 1-2.18.872 3.45 3.45 0 0 0-2.552-1.12 3.488 3.488 0 0 0-3.488 3.486c0 .276.03.543.063.81a9.912 9.912 0 0 1-7.162-3.674c-.3.53-.47 1.13-.498 1.74.027 1.23.642 2.3 1.557 2.92a3.357 3.357 0 0 1-1.555-.44.15.15 0 0 0 0 .06c-.004 1.67 1.2 3.08 2.8 3.42-.3.06-.606.1-.934.12-.216-.02-.435-.04-.623-.06.42 1.37 1.707 2.37 3.24 2.43a7.335 7.335 0 0 1-4.36 1.49L2 16.44A9.96 9.96 0 0 0 7.355 18c6.407 0 9.915-5.32 9.9-9.9.015-.18.01-.33 0-.5A6.546 6.546 0 0 0 19 5.79a6.185 6.185 0 0 1-1.992.56 3.325 3.325 0 0 0 1.494-1.93"></path>
-                    </svg>
-                </a>
             </div>
-            </div>
-        </div>
     </section>
     <script>
 $(document).ready(function() {
@@ -127,6 +200,15 @@ $(document).ready(function() {
       var refreshId =  setInterval( function(){
     $('#reloadcowsay').load('cowsay.php');//actualizas el div
    }, 1000 );
+});$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#reloadcowsay').load('cowsay.php');//actualizas el div
+   }, 1000 );
+});
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    //notifyMe();//actualizas el div
+   }, 60000 );
 });
 </script>
 <style> 
@@ -134,7 +216,9 @@ $(document).ready(function() {
   display: ;
   align-items: ;
   justify-content: ;
-  height: 92%;
+  height: all;
+  width: all;
+  background-color: black;
 }
 .at-item {
     top: 220px;
@@ -172,8 +256,8 @@ div
 }
 
 @keyframes mymove {
-  from {right: 0px;}
-  to {right: 300px;}
+  from {left: 0px;}
+  to {left: 300px;}
 }
 
 .typewriter h1 {
@@ -200,7 +284,6 @@ div
   50% { border-color: orange; }
 }
 </style>
-    <hr>
 <section id="content" class="code" style="display: none">
     <div class="navigation" align="justify">
         <div class="typewriter">    
@@ -289,8 +372,6 @@ div
         <div class="fullitem" style="background-color: black" align="center">
             <div class="navigation">
                 <p>
-                    <a>Cuautitlan Izcalli,<br>Edo. de Méx., México.</a><br>
-                    <a>CopyLeft@Linugux.Inx ||| 2022</a><br>
                     <a href="mailto:linugux@gmail.com">Linugux@gmail.com</a>.<br>
                     <a href="https://wa.me/525624600477">+52 56 2460 0477</a>
                 </p>
@@ -302,7 +383,6 @@ div
             <div class="navigation" align="left">
                 <ul>
                     <li><a href="http://4inkpress.ddns.net">Page Site Web "4inkpress" - Serigrafia</a></li>
-                    <li><a href="http://carlosvillamote.ddns.net">Page Site Web´s Carlos Villamote</a></li>
                     <li><a href="pages/index2016-11-21.html">Page Site Web 2016 Linugux.ddns.net</a></li>
                     <li><a href="https://github.com/linugux/linuguxWebSiteAgo21">Repository this web Version 1.0 ...</a></li>
                 </ul>

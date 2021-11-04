@@ -54,7 +54,7 @@ CREATE TABLE `phonebook` (
   `address` varchar(64) DEFAULT NULL,
   `email` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `phonebook` (
 
 LOCK TABLES `phonebook` WRITE;
 /*!40000 ALTER TABLE `phonebook` DISABLE KEYS */;
-INSERT INTO `phonebook` VALUES (1,'+52 56 2460 0477','Linugux','Inx.','Cuautitlan Izcalli, Mexico','linugux@gmail.com'),(2,'+1 607 358 7405','Xugunil','Xni.','Cuautitlan Izcalli, Mexico','xugunil@gmail.com'),(3,'+1 607 358 7405','Ayesk','Trep Mitter','Cuautitlan Izcalli, Mexico','gusgra2004@hotmail.com'),(4,'+1 607 358 7405','Pepe','Bras','Cuautitlan Izcalli, Mexico','braspepe@gmail.com'),(5,'+52 56 2460 0477','Nestor','Garrido','Cuautitlan Izcalli, Mexico','nestor.garrido.g@gmail.com'),(6,'+1 823 4838 8212','Patricia','Torres','Cuautitlan Izcalli, Mexico','patriciatren@gmail.com'),(7,'+1 823 4838 8212','Abraham','Condor','Cuautitlan Izcalli, Mexico','nestor.garrido.condor@gmail.com'),(8,'+1 823 4838 2145','Edith','Vela','Cuautitlan IZcalli, Mexico','epantene@gmail.com'),(9,'+52 56 2460 0477','Neto','Gardo','Cuautitlan Izcalli, Mexico','netogardo@hotmail.com'),(10,'+52 56 2460 0477','Create','Design','Cuautitlan Izcalli, Mexico','erickvega.soluciones@gmail.com'),(11,'+1 607 358 7405','Vacante','Castro','Cuautitlan Izcalli, Mexico','profuturo.berenice@gmail.com'),(12,'+1 607 358 7405','Dessire','Cristina','Cuautitlan Izcalli, Mexico','arturleee@gmail.com'),(13,'+52 55 1278 4420','Sugusmen','Ocho','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx'),(14,'+52 55 1278 4420','FirstEmail','Sgs','Cuautitlan Izcalli, Mexico','sugusmen@hotmail.com'),(15,'+52 55 4366 4826','Karmen','Danny','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx');
+INSERT INTO `phonebook` VALUES (1,'+52 56 2460 0477','Linugux','Inx.','Cuautitlan Izcalli, Mexico','linugux@gmail.com'),(2,'+1 607 358 7405','Xugunil','Xni.','Cuautitlan Izcalli, Mexico','xugunil@gmail.com'),(3,'+1 607 358 7405','Ayesk','Trep Mitter','Cuautitlan Izcalli, Mexico','gusgra2004@hotmail.com'),(4,'+1 607 358 7405','Pepe','Bras','Cuautitlan Izcalli, Mexico','braspepe@gmail.com'),(5,'+52 56 2460 0477','Nestor','Garrido','Cuautitlan Izcalli, Mexico','nestor.garrido.g@gmail.com'),(6,'+1 823 4838 8212','Patricia','Torres','Cuautitlan Izcalli, Mexico','patriciatren@gmail.com'),(7,'+1 823 4838 8212','Abraham','Condor','Cuautitlan Izcalli, Mexico','nestor.garrido.condor@gmail.com'),(8,'+1 823 4838 2145','Edith','Vela','Cuautitlan IZcalli, Mexico','epantene@gmail.com'),(9,'+52 56 2460 0477','Neto','Gardo','Cuautitlan Izcalli, Mexico','netogardo@hotmail.com'),(10,'+52 56 2460 0477','Create','Design','Cuautitlan Izcalli, Mexico','erickvega.soluciones@gmail.com'),(11,'+1 607 358 7405','Vacante','Castro','Cuautitlan Izcalli, Mexico','profuturo.berenice@gmail.com'),(12,'+1 607 358 7405','Dessire','Cristina','Cuautitlan Izcalli, Mexico','arturleee@gmail.com'),(13,'+52 55 1278 4420','Sugusmen','Ocho','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx'),(14,'+52 55 1278 4420','FirstEmail','Sgs','Cuautitlan Izcalli, Mexico','sugusmen@hotmail.com'),(15,'+52 55 4366 4826','Karmen','Danny','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx'),(16,'+52 56 3460 0477','LinuguxMail','Ru','Cuautitlan Izcalli, Mexico','linugux@mail.ru'),(17,'+52 55 1930 4501','Manuel','Tgr','Cuautitlan Izcalli, Mexico','lumpenterry@gmail.com');
 /*!40000 ALTER TABLE `phonebook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -100,4 +100,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-06 13:33:34
+-- Dump completed on 2021-10-06 12:00:38
