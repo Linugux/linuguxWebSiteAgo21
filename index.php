@@ -124,12 +124,13 @@
                     <div class='at-container'><br>                
                         <img width="10%" src="linugux.jpg" style="top: 10px; position: absolute;" align="right" />
                         <div class="typewriter" style="position: relative;" align="center">
-                        <h1 id="reloadtitle" style="top: 20px; font-size: 30px;"><a>Linugux.ddns.net</a></h1>
+                        <h1 id="reloadtitle" style="max-width: 400px; top: 20px; font-size: 30px;"><a>Linugux.ddns.net</a></h1>
                         </div>
                         <div style="position: relative;" id="reloadphp"  class="navigation" align="right"></div>
-                        <br><br>
-                        <br><hr>
-                        <div>
+                        <div class="home" align="left">
+                            <a class="linugux" id="title" style="max-width: 300px; font-size: 22px">Creation and <br>Design</a>
+                        </div>
+                        <div align="center">
                             <p style="color: white ;" align="justify" >
                               <!--  <tt id="reloadmsgblue" >
                                    <?php include 'fortuneCowsay.php'; ?>
@@ -149,17 +150,15 @@
         }
         </script>
         <br>
-        <div class="home" align="left">
-            <a class="linugux" id="title" style="font-size: 22px">Creation and <br>Design</a>
-        </div>
+        
         <div id="">
             <ul class="navigation" style="position: relative; background-color: black">
                 <li><button id="home" style="background-color: black"><a>Home</a></button></li>
                 <li><button id="code" style="background-color: black"><a>Code</a></button></li>
                 <li><button id="about" style="background-color: black"><a>About</a></button></li>
                 <li><button id="contact" style="background-color: black"><a>Contact</a></button></li>
-                <!--<li><button style="background-color: black" onclick="notifyMe()"><a>NotifY</a></button></li>
-                <li><button style="background-color: black" onclick="getResolution();"><a>Resolution</a></button></li>-->
+                <li><button style="background-color: black" onclick="notifyMe()"><a>NotifY</a></button></li>
+                <!--<li><button style="background-color: black" onclick="getResolution();"><a>Resolution</a></button></li>-->
 
                 <!--
                 <li><a href="index.html">Home</a></li>
