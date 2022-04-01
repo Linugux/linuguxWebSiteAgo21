@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <div><br>
+                <div><br>  
                         <ul class="navigation" style="max-width: 300px; position: relative; background-color: black">
 			                <li><button id="home" style="background-color: black"><a>Home</a></button></li>
 			                <li><button id="code" style="background-color: black"><a>Code</a></button></li>

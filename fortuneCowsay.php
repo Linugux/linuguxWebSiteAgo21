@@ -1,1 +1,2 @@
-You may be gone tomorrow, but that doesn't mean that you weren't here today.
+Q:	How do you stop an elephant from charging?
+A:	Take away his credit cards.
