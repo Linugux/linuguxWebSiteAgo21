@@ -1,13 +1,10 @@
- ________________________________________
-/ I fell asleep reading a dull book, and \
-| I dreamt that I was reading on, so I   |
-\ woke up from sheer boredom.            /
- ----------------------------------------
-       \
-        \  ....
-          .    ........
-          .            .
-          .             .
-    .......              .........
-    ..............................
-Elephant inside ASCII snake
+ ____________________________________
+/ You may be gone tomorrow, but that \
+| doesn't mean that you weren't here |
+\ today.                             /
+ ------------------------------------
+        \  ^___^
+         \ (ooo)\_______
+           (___)\       )\/\
+                ||----w |
+                ||     ||
