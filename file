@@ -1,0 +1,12 @@
+alsa-utils
+hicolor-icon-theme
+libasound2:armhf
+libasound2-data
+libx11-6:armhf
+libx11-data
+libxau6:armhf
+libxdmcp6:armhf
+libxext6:armhf
+libxmuu1:armhf
+libxpm4:armhf
+shared-mime-info

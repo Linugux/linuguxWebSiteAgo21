@@ -1,0 +1,214 @@
+{
+  "stdout": [
+    [
+      0.635099,
+      "\u001b]0;pi@server: /var/www/html/linugux/fileBashRPi2021\u0007\u001b[01;32mpi@server\u001b[00m:\u001b[01;34m/var/www/html/linugux/fileBashRPi2021 $\u001b[00m "
+    ],
+    [
+      5.012191,
+      "l"
+    ],
+    [
+      0.06389,
+      "s"
+    ],
+    [
+      0.179435,
+      "\r\n"
+    ],
+    [
+      0.016772,
+      "README.md    configSiteApache2.conf  ssmtp.conf"
+    ],
+    [
+      0.003215,
+      "\r\n"
+    ],
+    [
+      0.004226,
+      "\u001b[0m\u001b[01;32mcommands.sh\u001b[0m  demo.json               wpa_supplicant.conf"
+    ],
+    [
+      0.00377,
+      "\r\n"
+    ],
+    [
+      0.01442,
+      "\u001b]0;pi@server: /var/www/html/linugux/fileBashRPi2021\u0007\u001b[01;32mpi@server\u001b[00m:\u001b[01;34m/var/www/html/linugux/fileBashRPi2021 $\u001b[00m "
+    ],
+    [
+      2.692003,
+      "ls"
+    ],
+    [
+      0.381883,
+      "\b\bsudo apt-get install asciinema \r"
+    ],
+    [
+      0.859831,
+      "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[13Pcowsay | fortune "
+    ],
+    [
+      0.003238,
+      "\r\n"
+    ],
+    [
+      0.006206,
+      "\r\u001b[K\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C"
+    ],
+    [
+      0.407288,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bsudo apt-get install asciinema \r"
+    ],
+    [
+      0.500475,
+      "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cls\u001b[K"
+    ],
+    [
+      0.003166,
+      "\r\n"
+    ],
+    [
+      0.004255,
+      "\r\u001b[K\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C"
+    ],
+    [
+      0.015974,
+      "\b\b\u001b[K"
+    ],
+    [
+      0.029017,
+      "\u0007"
+    ],
+    [
+      0.030218,
+      "\u0007"
+    ],
+    [
+      0.028234,
+      "\u0007"
+    ],
+    [
+      0.030297,
+      "\u0007"
+    ],
+    [
+      0.028896,
+      "\u0007"
+    ],
+    [
+      0.030527,
+      "\u0007"
+    ],
+    [
+      0.030106,
+      "\u0007"
+    ],
+    [
+      0.030279,
+      "\u0007"
+    ],
+    [
+      0.029743,
+      "\u0007"
+    ],
+    [
+      0.943253,
+      "a"
+    ],
+    [
+      0.373744,
+      "s"
+    ],
+    [
+      0.600033,
+      "c"
+    ],
+    [
+      0.160781,
+      "i"
+    ],
+    [
+      0.393563,
+      "i"
+    ],
+    [
+      0.773753,
+      "n"
+    ],
+    [
+      0.180139,
+      "ema "
+    ],
+    [
+      1.619728,
+      "d"
+    ],
+    [
+      0.277342,
+      "\b\u001b[K"
+    ],
+    [
+      0.284429,
+      "p"
+    ],
+    [
+      0.404196,
+      "la"
+    ],
+    [
+      0.371802,
+      "\u0007"
+    ],
+    [
+      0.642154,
+      "y"
+    ],
+    [
+      0.479595,
+      " "
+    ],
+    [
+      0.306245,
+      "d"
+    ],
+    [
+      0.138329,
+      "e"
+    ],
+    [
+      0.21626,
+      "m"
+    ],
+    [
+      0.347557,
+      "o.json "
+    ],
+    [
+      1.004307,
+      "\r\n"
+    ],
+    [
+      14.839792,
+      "\u001b[33m~ Playback failed: JSON decoding error: Expecting value: line 1 column 1 (char 0)\u001b[0m"
+    ],
+    [
+      0.003177,
+      "\r\n"
+    ],
+    [
+      0.440018,
+      "\u001b]0;pi@server: /var/www/html/linugux/fileBashRPi2021\u0007\u001b[01;32mpi@server\u001b[00m:\u001b[01;34m/var/www/html/linugux/fileBashRPi2021 $\u001b[00m "
+    ]
+  ],
+  "title": null,
+  "duration": 35.880286,
+  "command": null,
+  "version": 1,
+  "width": 80,
+  "height": 24,
+  "env": {
+    "TERM": "xterm",
+    "SHELL": "/bin/bash"
+  }
+}
