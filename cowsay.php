@@ -1,25 +1,13 @@
  ________________________________________
-/ Q: How do you play religious roulette? \
-| A: You stand around in a circle and    |
-| blaspheme and see who gets struck by   |
-\ lightning first.                       /
+/ I fell asleep reading a dull book, and \
+| I dreamt that I was reading on, so I   |
+\ woke up from sheer boredom.            /
  ----------------------------------------
-    \               ,-----._
-  .  \         .  ,'        `-.__,------._
- //   \      __\\'                        `-.
-((    _____-'___))                           |
- `:='/     (alf_/                            |
- `.=|      |='                               |
-    |)   O |                                  \
-    |      |                               /\  \
-    |     /                          .    /  \  \
-    |    .-..__            ___   .--' \  |\   \  |
-   |o o  |     ``--.___.  /   `-'      \  \\   \ |
-    `--''        '  .' / /             |  | |   | \
-                 |  | / /              |  | |   mmm
-                 |  ||  |              | /| |
-                 ( .' \ \              || | |
-                 | |   \ \            // / /
-                 | |    \ \          || |_|
-                /  |    |_/         /_|
-               /__/
+       \
+        \  ....
+          .    ........
+          .            .
+          .             .
+    .......              .........
+    ..............................
+Elephant inside ASCII snake
